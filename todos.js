@@ -35,6 +35,7 @@ btnTodo.setAttribute('onclick', 'adicionarTodos()') //Quando clicado aciona a fu
 function adicionarTodos() {
     let addTodos = inputTodo.value;
     todos.push(addTodos);
+    inputTodo.value = '';
     renderTodos();
     saveToStrorage()
 }
